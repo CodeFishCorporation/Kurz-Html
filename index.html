@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4-недельный курс HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 4-недельный курс HTML</h1>
+    <p>От основ до профессиональной верстки</p>
+  </header>
+
+  
+
+  <div class="container">
+     <div class="weeks-nav-floating">
+        <button data-goto="week1" class="main-btn">Неделя 1</button>
+        <button data-goto="week2" class="main-btn">Неделя 2</button>
+        <button data-goto="week3" class="main-btn">Неделя 3</button>
+        <button data-goto="week4" class="main-btn">Неделя 4</button>
+      </div>
+        <button id="scrollTopBtn" class="main-btn scrollTopBtn" style="position:fixed;bottom:30px;right:30px;z-index:1000;">Наверх</button>
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="progress-text" id="progressText">Прогресс: 0%</div>
+    </div>
+
+    <div class="accordion">
+      <!-- Неделя 1 -->
+      <div class="accordion-item" id="week1">
+        <button class="accordion-btn" data-week="week1">Неделя 1: Основы HTML</button>
+        <div class="accordion-content">
+          <div class="theory">
+            <h3>📚 Теория</h3>
+            <p><strong>HTML (HyperText Markup Language)</strong> — язык разметки для создания структуры веб-страницы.
+            <strong>HTML </strong>— это Фундамент, стены, крыша (если расматривать 
+            строения сайта как дом).</p>
+            
+            <div class="theory-block">
+              <h4>Основные теги:</h4>
+              <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code> — объявление типа документа</li>
+                <li><code>&lt;html&gt;</code> — корневой элемент</li>
+                <li><code>&lt;head&gt;</code> — метаинформация (заголовок, стили, скрипты)</li>
+                <li><code>&lt;body&gt;</code> — видимая часть страницы</li>
+                <li><code>&lt;h1&gt;-&lt;h6&gt;</code> — заголовки разного уровня</li>
+                <li><code>&lt;p&gt;</code> — абзац текста</li>
+                <li><code>&lt;a href="..."&gt;</code> — ссылки</li>
+                <li><code>&lt;img src="..." alt="..."&gt;</code> — изображения</li>
+              </ul>
+            </div>
+
+            <div class="code-example">
+              <h4>📝 Пример кода:</h4>
+              <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Моя первая страница&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+  &lt;p&gt;Это мой первый HTML-документ.&lt;/p&gt;
+  &lt;a href="https://example.com"&gt;Пример ссылки&lt;/a&gt;
+  &lt;img src="image.jpg" alt="Описание изображения"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <div class="live-demo">
+              <h4>👀 Как это выглядит в браузере:</h4>
+              <div class="demo-browser">
+                <h1 style="margin:0;font-size:24px;">Привет, мир!</h1>
+                <p style="margin:10px 0 0;">Это мой первый HTML-документ.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz">
+            <h3>❓ Проверочные вопросы</h3>
+            <div class="quiz-question">
+              1. Для чего нужен тег <code>&lt;head&gt;</code>?
+            </div>
+            <div class="quiz-options">
+              <div class="quiz-option">
+                <input type="radio" name="q1" id="q1a1"> 
+                <label for="q1a1">Для хранения видимого содержимого страницы</label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="q1" id="q1a2"> 
+                <label for="q1a2">Для хранения служебной информации о странице</label>
+              </div>
+            </div>
+            <button class="quiz-submit">Проверить ответ</button>
+          </div>
+
+          <div class="practice">
+            <h3>🛠 Практическое задание</h3>
+            <p>Создай страницу с:</p>
+            <ol>
+              <li>Заголовком <code>&lt;h1&gt;</code></li>
+              <li>Двумя абзацами текста</li>
+              <li>Ссылкой на любой сайт</li>
+              <li>Изображением</li>
+            </ol>
+          </div>
+
+          <div class="complete-section">
+            <button class="complete-btn" data-week="1">Отметить неделю как пройденную</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Промежуточный блок после недели 1 -->
+      <div class="intermediate-block">
+        <h3>🔍 Повторение основ HTML</h3>
+        <div class="review-content">
+          <div class="fun-fact">
+            <h4>📌 Знаешь ли ты?</h4>
+            <p>Первый веб-сайт появился в 1991 году и содержал всего несколько строк текста!</p>
+          </div>
+          
+          <div class="quick-check">
+            <h4>⚡ Быстрая проверка знаний</h4>
+            <p>1. Какой тег должен быть самым первым в HTML-документе?</p>
+            <button class="show-answer">Показать ответ</button>
+            <div class="answer hidden"><code>&lt;!DOCTYPE html&gt;</code></div>
+            
+            <p>2. Какой тег содержит основное содержимое страницы?</p>
+            <button class="show-answer">Показать ответ</button>
+            <div class="answer hidden"><code>&lt;body&gt;</code></div>
+          </div>
+          
+          <div class="joke-block">
+            <h4>😄 Шутка программиста</h4>
+            <p>Что общего между HTML и забором? И то, и другое состоит из тегов,
+                 и если не закрыть, то будет "некрасиво".</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Неделя 2 -->
+      <div class="accordion-item" id="week2">
+        <button class="accordion-btn" data-week="week2">Неделя 2: Семантика и формы</button>
+        <div class="accordion-content">
+          <div class="theory">
+            <h3>📚 Семантическая верстка</h3>
+            <p><strong>Семантическая вёрстка</strong>— это подход, при котором HTML-теги выбираются
+                 не только для внешнего вида, но и по смыслу их содержимого.</p>
+                <p><strong>Зачем?</strong></p>
+                <p><strong>Браузеры и поисковики</strong> лучше понимают структуру страницы.</p>
+                <p><strong>Поддержка и масштабируемость</strong> кода (легче вносить изменения).</p>
+                <strong>"Семантика — это когда ты называешь комнаты не (Хранилище), а (Кухня)".</strong>
+            
+            <div class="theory-block">
+              <h4>Основные семантические теги:</h4>
+              <ul>
+                <li><code>&lt;header&gt;</code> — шапка сайта/раздела</li>
+                <li><code>&lt;nav&gt;</code> — навигационное меню</li>
+                <li><code>&lt;main&gt;</code> — основное содержимое</li>
+                <li><code>&lt;section&gt;</code> — тематическая группа контента</li>
+                <li><code>&lt;article&gt;</code> — самостоятельный контент</li>
+                <li><code>&lt;footer&gt;</code> — подвал сайта/раздела</li>
+              </ul>
+            </div>
+
+            <div class="code-example">
+              <h4>📝 Пример семантической разметки:</h4>
+              <pre><code>&lt;header&gt;
+  &lt;h1&gt;Заголовок сайта&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Главная&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Заголовок статьи&lt;/h2&gt;
+    &lt;p&gt;Содержимое статьи...&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;© 2025 Мой сайт&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+            </div>
+
+            <div class="live-demo">
+              <h4>👀 Как это выглядит в браузере:</h4>
+              <div class="demo-browser">
+                <header style="border-bottom:1px solid #ddd;padding:10px;margin-bottom:15px;">
+                  <h1 style="margin:0;font-size:24px;">Заголовок сайта</h1>
+                  <nav style="margin-top:10px;">
+                    <a href="#" style="color:blue;text-decoration:none;">Главная</a>
+                  </nav>
+                </header>
+                <main>
+                  <article style="border:1px solid #eee;padding:15px;margin-bottom:15px;">
+                    <h2 style="margin-top:0;">Заголовок статьи</h2>
+                    <p>Содержимое статьи...</p>
+                  </article>
+                </main>
+                <footer style="border-top:1px solid #ddd;padding:10px;text-align:center;">
+                  <p style="margin:0;">© 2025 Мой сайт</p>
+                </footer>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz">
+            <h3>❓ Проверочные вопросы</h3>
+            <div class="quiz-question">
+              1. Какой тег следует использовать для основного содержимого страницы?
+            </div>
+            <div class="quiz-options">
+              <div class="quiz-option">
+                <input type="radio" name="q1" id="q2a1"> 
+                <label for="q2a1"><code>&lt;main&gt;</code></label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="q1" id="q2a2"> 
+                <label for="q2a2"><code>&lt;div&gt;</code></label>
+              </div>
+            </div>
+            <button class="quiz-submit">Проверить ответ</button>
+          </div>
+
+          <div class="practice">
+            <h3>🛠 Практическое задание</h3>
+            <p>Создай страницу с:</p>
+            <ol>
+              <li>Семантической структурой (header, main, footer)</li>
+              <li>Навигационным меню</li>
+              <li>Статьей с заголовком и текстом</li>
+            </ol>
+          </div>
+          <div class="complete-section">
+            <button class="complete-btn" data-week="2">Отметить неделю как пройденную</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Промежуточный блок после недели 2 -->
+      <div class="intermediate-block">
+        <h3>🔍 Семантика в реальной жизни</h3>
+        <div class="review-content">
+          <div class="case-study">
+            <h4>📊 Пример из практики</h4>
+            <p>Сайты с правильной семантической разметкой получают на 30% больше трафика из поисковых систем!</p>
+          </div>
+          
+          <div class="memory-trick">
+            <h4>🧠 Как запомнить?</h4>
+            <p>Представь страницу как человека: <code>&lt;header&gt;</code> - голова, <code>&lt;main&gt;</code> - тело, <code>&lt;footer&gt;</code> - ноги.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Неделя 3 -->
+      <div class="accordion-item" id="week3">
+        <button class="accordion-btn" data-week="week3">Неделя 3: Таблицы и медиа</button>
+        <div class="accordion-content">
+          <div class="theory">
+            <h3>📚 Таблицы</h3>
+            <p>Таблицы используются для отображения табличных данных.</p>
+            
+            <div class="theory-block">
+              <h4>Основные теги таблиц:</h4>
+              <ul>
+                <li><code>&lt;table&gt;</code> — контейнер таблицы</li>
+                <li><code>&lt;tr&gt;</code> — строка таблицы</li>
+                <li><code>&lt;td&gt;</code> — ячейка данных</li>
+                <li><code>&lt;th&gt;</code> — заголовок столбца/строки</li>
+                <li><code>&lt;caption&gt;</code> — заголовок таблицы</li>
+              </ul>
+            </div>
+
+            <div class="code-example">
+              <h4>📝 Пример таблицы:</h4>
+              <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Имя&lt;/th&gt;
+    &lt;th&gt;Возраст&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Анна&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+
+            <div class="live-demo">
+              <h4>👀 Как это выглядит в браузере:</h4>
+              <div class="demo-browser">
+                <table border="1" style="border-collapse:collapse;width:100%;">
+                  <tr>
+                    <th style="padding:8px;background:#0000;">Имя</th>
+                    <th style="padding:8px;background:#0000;">Возраст</th>
+                  </tr>
+                  <tr>
+                    <td style="padding:8px;">Вася</td>
+                    <td style="padding:8px;">35</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz">
+            <h3>❓ Проверочные вопросы</h3>
+            <div class="quiz-question">
+              1. Какой тег используется для заголовка столбца таблицы?
+            </div>
+            <div class="quiz-options">
+              <div class="quiz-option">
+                <input type="radio" name="q1" id="q3a1"> 
+                <label for="q3a1"><code>&lt;td&gt;</code></label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="q1" id="q3a2"> 
+                <label for="q3a2"><code>&lt;th&gt;</code></label>
+              </div>
+            </div>
+            <button class="quiz-submit">Проверить ответ</button>
+          </div>
+
+          <div class="practice">
+            <h3>🛠 Практическое задание</h3>
+            <p>Создай таблицу с:</p>
+            <ol>
+              <li>Заголовками столбцов</li>
+              <li>3 строками данных</li>
+              <li>Объединенными ячейками (используй colspan или rowspan)</li>
+            </ol>
+          </div>
+
+          <div class="complete-section">
+            <button class="complete-btn" data-week="3">Отметить неделю как пройденную</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Промежуточный блок после недели 3 -->
+      <div class="intermediate-block">
+        <h3>🔍 Таблицы: за и против</h3>
+        <div class="review-content">
+          <div class="pros-cons">
+            <h4>✔️ Когда использовать таблицы:</h4>
+            <ul>
+              <li>Для реальных табличных данных (финансы, расписания)</li>
+              <li>Когда нужно точное выравнивание ячеек</li>
+            </ul>
+            
+            <h4>❌ Когда НЕ использовать:</h4>
+            <ul>
+              <li>Для верстки страницы (используй CSS Grid/Flexbox)</li>
+              <li>Для создания колонок текста</li>
+            </ul>
+          </div>
+          
+          <div class="joke-block">
+            <h4>😄 Шутка</h4>
+            <p>Таблица говорит ячейке: "Ты в моих рамках!" Ячейка отвечает: "Нет, это ты в моих!"</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Неделя 4 -->
+      <div class="accordion-item" id="week4">
+        <button class="accordion-btn" data-week="week4">Неделя 4: Метаданные и оптимизация</button>
+        <div class="accordion-content">
+          <div class="theory">
+            <h3>📚 Метатеги</h3>
+            <p>Метатеги предоставляют информацию о странице для браузеров 
+                и поисковых систем.</p>
+            
+            <div class="theory-block">
+              <h4>Важные метатеги:</h4>
+              <ul>
+                <li><code>&lt;meta charset="UTF-8"&gt;</code> — кодировка документа</li>
+                <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> — адаптивный дизайн</li>
+                <li><code>&lt;meta name="description" content="..."&gt;</code> — описание страницы</li>
+                <li><code>&lt;title&gt;</code> — заголовок страницы (отображается во вкладке браузера)</li>
+              </ul>
+            </div>
+
+            <div class="code-example">
+              <h4>📝 Пример метатегов:</h4>
+              <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta name="description" content="Описание моей страницы"&gt;
+  &lt;title&gt;Моя страница&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+            </div>
+
+            <div class="important-note">
+              <p>⚠️ <strong>Важно:</strong> Правильные метатеги улучшают 
+                SEO и отображение твоего сайта в поисковых системах.</p>
+                <p><strong>SEO (Search Engine Optimization)</strong> — это настройка сайта,
+                     чтобы он выше ранжировался в поиске (Google)
+                      и привлекал больше бесплатного трафика.</p>
+                      <strong>Пример:</strong> Ты ищешь "как приготовить пасту".
+                       Сайты на первой странице Google — это результат хорошего SEO.
+            </div>
+          </div>
+
+          <div class="quiz">
+            <h3>❓ Проверочные вопросы</h3>
+            <div class="quiz-question">
+              1. Какой метатег отвечает за адаптивность страницы?
+            </div>
+            <div class="quiz-options">
+              <div class="quiz-option">
+                <input type="radio" name="q1" id="q4a1"> 
+                <label for="q4a1"><code>&lt;meta name="viewport"&gt;</code></label>
+              </div>
+              <div class="quiz-option">
+                <input type="radio" name="q1" id="q4a2"> 
+                <label for="q4a2"><code>&lt;meta charset&gt;</code></label>
+              </div>
+            </div>
+            <button class="quiz-submit">Проверить ответ</button>
+          </div>
+
+          <div class="practice">
+            <h3>🛠 Итоговый проект</h3>
+            <p>Создай полноценную страницу с:</p>
+            <ol>
+              <li>Правильными метатегами</li>
+              <li>Семантической структурой</li>
+              <li>Таблицей данных</li>
+              <li>Формами обратной связи</li>
+              <li>Медиа-контентом</li>
+            </ol>
+          </div>
+          <div class="complete-section">
+            <button class="complete-btn" data-week="4">Отметить неделю как пройденную</button>
+          </div>
+        </div>
+      </div>
+          <!-- Промежуточный блок после недели 4 -->
+      <div class="intermediate-block">
+        <h3>🔍 SEO: Что важно знать</h3>
+        <div class="review-content">
+          <div class="seo-tips">
+            <h4>🔎 3 главных SEO-метатега:</h4>
+            <ol>
+              <li><strong>Title</strong> - заголовок страницы в поисковике (до 60 символов)</li>
+              <li><strong>Description</strong> - описание под заголовком (до 160 символов)</li>
+              <li><strong>Viewport</strong> - для мобильной адаптации</li>
+            </ol>
+          </div>
+          
+          <div class="joke-block">
+            <h4>😄 Шутка "Я не знаю зачем её добавил ;)</h4>
+            <p>Почему метатеги такие скромные? Потому что они работают за кулисами!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Финальный экзамен -->
+      <div class="container">
+        <div class="exam-block hidden" id="finalExam">
+            <h2>🎯 Финальный экзамен</h2>
+            <p class="exam-intro">Проверь свои знания по всему курсу. Для успешной сдачи нужно правильно ответить на 4 вопроса, и последнее задание.</p>
+            
+            <div class="exam-content">
+                <div class="exam-theory">
+                    <h3>📝 Краткое повторение</h3>
+                    <div class="theory-summary">
+                        <div class="theory-card">
+                            <h4>1. Основы HTML</h4>
+                            <p>Структура документа: DOCTYPE, html, head, body</p>
+                        </div>
+                        
+                        <div class="theory-card">
+                            <h4>2. Семантика</h4>
+                            <p>header, main, footer, article, section</p>
+                        </div>
+                        
+                        <div class="theory-card">
+                            <h4>3. Таблицы</h4>
+                            <p>table, tr, td, th, colspan, rowspan</p>
+                        </div>
+                        
+                        <div class="theory-card">
+                            <h4>4. Метаданные</h4>
+                            <p>charset, viewport, description, title</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="exam-questions">
+                    <h3>❓ Вопросы экзамена</h3>
+                    
+                    <div class="exam-question">
+                        <p>1. Какой тег содержит метаинформацию о странице?</p>
+                        <select class="exam-select">
+                            <option value="">Выбери ответ</option>
+                            <option value="head">&lt;head&gt;</option>
+                            <option value="body">&lt;body&gt;</option>
+                            <option value="meta">&lt;meta&gt;</option>
+                        </select>
+                    </div>
+                    
+                    <div class="exam-question">
+                        <p>2. Какой тег следует использовать для основного содержимого?</p>
+                        <select class="exam-select">
+                            <option value="">Выбери ответ</option>
+                            <option value="main">&lt;main&gt;</option>
+                            <option value="div">&lt;div&gt;</option>
+                            <option value="content">&lt;content&gt;</option>
+                        </select>
+                    </div>
+                    
+                    <div class="exam-question">
+                        <p>3. Какой тег используется для заголовка столбца таблицы?</p>
+                        <select class="exam-select">
+                            <option value="">Выбери ответ</option>
+                            <option value="td">&lt;td&gt;</option>
+                            <option value="th">&lt;th&gt;</option>
+                            <option value="thead">&lt;thead&gt;</option>
+                        </select>
+                    </div>
+                    
+                    <div class="exam-question">
+                        <p>4. Какой метатег отвечает за адаптивность?</p>
+                        <select class="exam-select">
+                            <option value="">Выбери ответ</option>
+                            <option value="viewport">&lt;meta name="viewport"&gt;</option>
+                            <option value="charset">&lt;meta charset&gt;</option>
+                            <option value="responsive">&lt;meta name="responsive"&gt;</option>
+                        </select>
+                    </div>
+                    
+                    <button class="exam-submit">Проверить ответы</button>
+                    
+                    <div class="exam-result hidden">
+                        <h4>Твой результат: <span class="score">0</span>/4</h4>
+                        <p class="result-message"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Финальный проект -->
+        <div class="final-project" style="display:none">
+        <h2>🎓 Финальный проект: Создай свой сайт</h2>
+        <div class="project-content">
+            <h3>Задание:</h3>
+            <p>Создай многостраничный сайт (минимум 3 страницы), используя все знания из курса. Сайт должен содержать:</p>
+            
+            <div class="requirements">
+                <h4>Обязательные требования:</h4>
+                <ol>
+                    <li>Правильную HTML-структуру с семантическими тегами</li>
+                    <li>Навигационное меню с ссылками между страницами</li>
+                    <li>Форму обратной связи</li>
+                    <li>Таблицу с данными</li>
+                    <li>Медиа-контент (изображения, видео или аудио)</li>
+                    <li>Список (маркированный или нумерованный)</li>
+                    <li>Правильные метатеги</li>
+                    <li>Футер с контактной информацией</li>
+                </ol>
+                
+                <h4>Дополнительные элементы (по желанию):</h4>
+                <ul>
+                    <li>Раскрывающиеся элементы (details/summary)</li>
+                    <li>Карту (iframe с Google Maps)</li>
+                    <li>Индикатор прогресса</li>
+                    <li>Вкладки (табы)</li>
+                </ul>
+            </div>
+            
+            <div class="project-example">
+                <h4>Пример структуры сайта:</h4>
+                <pre><code>my-site/
+    ├── index.html       # Главная страница
+    ├── about.html      # Страница "О нас"
+    ├── contact.html    # Страница контактов
+    └── images/         # Папка с изображениями
+        └── logo.png</code></pre>
+                
+                <h4>Пример кода главной страницы:</h4>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="Мой первый сайт - главная страница"&gt;
+    &lt;title&gt;Мой сайт - Главная&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Мой первый сайт&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Главная&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;О нас&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Контакты&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Добро пожаловать!&lt;/h2&gt;
+            &lt;p&gt;Это мой первый сайт, созданный в рамках курса HTML.&lt;/p&gt;
+            &lt;img src="images/logo.png" alt="Логотип сайта"&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 Мой сайт. Все права защищены.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            
+            <div class="project-tips">
+                <h4>Советы по выполнению:</h4>
+                <ul>
+                    <li>Начни с планирования структуры сайта на бумаге</li>
+                    <li>Создай все необходимые HTML-файлы и папки</li>
+                    <li>Добавляй контент постепенно, проверяя результат в браузере</li>
+                    <li>Используй валидатор HTML для проверки кода</li>
+                    <li>Не забывай про комментарии в коде для сложных участков</li>
+                </ul>
+            </div>
+            
+           <div class="project-submission">
+            <h3>Как сдать проект:</h3>
+            <ol>
+              <li>Создай папку с проектом</li>
+              <li>Заархивируй её в ZIP</li>
+              <li>Отправь архив на проверку</li>
+            </ol>
+          </div>
+          <div><button id="goToCssBtn" class="css-btn hidden">Перейти к CSS</button></div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
