@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(finalProjectBlock, { attributes: true, attributeFilter: ['style'] });
 
     goToCssBtn.addEventListener('click', function() {
-      window.location.href = 'index.html';
+      window.location.href = 'https://codefishcorporation.github.io/Kurz-CSS/';
     });
   }
 
